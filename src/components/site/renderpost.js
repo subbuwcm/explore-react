@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Axios from 'axios'
 import {Link} from 'react-router-dom'
 import { connect } from 'react-redux'
-import {deleteTodoAction } from '../../actions/dispatchActions'
+import {deletePostAction } from '../../actions/dispatchActions'
 
 class RenderPost extends Component{
 
@@ -64,7 +64,7 @@ const mapDispatchToProps = (dispatch) =>{
 	return{
 		deletePost: (id) =>{
 			console.log('in delete post'+id);
-			dispatch(deleteTodoAction(id))
+			dispatch(deletePostAction(id))
 		}
 	}
 }
