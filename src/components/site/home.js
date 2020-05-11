@@ -3,7 +3,7 @@ import Axios from 'axios'
 import {Link} from 'react-router-dom'
 import PocoBallImage from '../../resources/images/pokeball.png'
 import { connect } from 'react-redux'
-
+import AEMSiteData from './aemsite.js'
 class Home extends Component{
 	/*
 	// not using this as we are using redux state
@@ -45,6 +45,7 @@ class Home extends Component{
 			<div className='container home'>
 				<h4 className='center'> Home</h4>
 				{postList}
+				<AEMSiteData/>
 			</div>
 		)
 	}
